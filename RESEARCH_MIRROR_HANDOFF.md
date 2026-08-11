@@ -15,15 +15,21 @@
 - release_condition: deterministic populated fixture validation and ERL registry promotion
 
 ## Installed authoritative files
-`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`.
+`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `research/conformance.json`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`.
 
 Upstream standard: `StegVerse-Labs/Executive_Rhetoric_Ledger/standards/multi-trajectory-research-surface.v1.md`.
+
+## Research posture
+- recurrence: REQUIRED while documentary, memoir, court, institutional, or public-record evidence can still alter OPEN/ACTIVE trajectories
+- default cadence: weekly, adjusted by trajectory volatility
+- `.github/workflows/weekly-ingest.yml` is transport/ingest, not automatically a research monitor
+- all plausible trajectories are eligible for search; contradictory/null/new trajectories are preserved
+- local output remains lead-only/context-only until ERL review
 
 ## Evidence
 - handoff: `af47d450ce856ddccfe2447cef3b70a22727e617`
 - research surface: `c35983e12ff5c9d4d6c4a712af0973ace966fab1`
-
-Local output remains lead-only/context-only; all trajectories are eligible for search; contradictory/null evidence and newly discovered trajectories are preserved; ERL retains evaluation authority.
+- conformance/recurrence profile: `ae6830713a0285fa9da653071f8becdebadaf292`
 
 ## Remaining
 1. deterministic populated fixture and adapter execution proof;
@@ -31,8 +37,8 @@ Local output remains lead-only/context-only; all trajectories are eligible for s
 3. registry promotion to CONFORMING.
 
 ## Completion accounting
-- developed-files: 8/8 = 100%
+- developed-files: 9/9 = 100%
 - scaffolding/stubs: 0
 - validation: 0/3
 - integration: 1/2
-- goal-activation: 65%
+- goal-activation: 68%
