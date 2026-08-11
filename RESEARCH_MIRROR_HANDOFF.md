@@ -11,11 +11,12 @@
 - github_token_authority: NONE
 
 ## Claim
-- state: CLAIMED_FOR_VALIDATION
-- release_condition: deterministic populated fixture + ERL intake validation + registry promotion
+- state: COMPLETE / VALIDATION CLAIM RELEASED
+- released_at: 2026-08-11T18:05:00Z
+- release_evidence: `research/receipts/2026-08-11-populated-adapter-and-intake-validation.json`
 
 ## Installed authoritative files
-`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `research/conformance.json`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`.
+`research/README.md`, `research/frontier.json`, `research/acquisition_requests.jsonl`, `research/source_candidates.jsonl`, `research/research_receipts.jsonl`, `research/conformance.json`, `data/sources/sources_whitelist.csv`, `scripts/search_agent.py`, `tests/test_research_adapter_deterministic.py`.
 
 Upstream standard: `StegVerse-Labs/Executive_Rhetoric_Ledger/standards/multi-trajectory-research-surface.v1.md`.
 Upstream transport: `StegVerse-Labs/Executive_Rhetoric_Ledger/contracts/research-candidate-transport.v1.md`.
@@ -23,29 +24,24 @@ Upstream transport: `StegVerse-Labs/Executive_Rhetoric_Ledger/contracts/research
 ## Research posture
 - recurrence: REQUIRED while documentary, memoir, court, institutional, or public-record evidence can alter OPEN/ACTIVE trajectories;
 - default cadence: weekly, adjusted by trajectory volatility;
-- `.github/workflows/weekly-ingest.yml` is transport/ingest, not automatically a research monitor;
-- contradictory/null/new trajectories are preserved; local output remains lead-only/context-only until ERL review.
+- `.github/workflows/weekly-ingest.yml` remains transport/ingest, not automatically a research monitor;
+- potentially supporting, contrary, contextual, and null candidate evidence is preserved without local conclusion promotion.
 
-## Evidence
-- research surface: `c35983e12ff5c9d4d6c4a712af0973ace966fab1`
-- conformance profile: `ae6830713a0285fa9da653071f8becdebadaf292`
+## Validation evidence
 - adapter transport alignment: `4afa3f21518f84907eb8f7acd163328ad70908d2`
+- deterministic fixture: `69a7b4909d687305071ba2c660c58a110cd62f8b`
+- populated adapter + ERL intake receipt: `a19752116e14459e448c371f3d36598e84572122`
+- conformance promotion: `2f1fc3d8618071ce32e93a36438a57cb83aeda6a`
 
-The adapter now emits the ERL candidate v1 schema with full repository identity, no native/evaluation mutation, TV/TVC credential authority, GitHub token authority NONE, and authority effect NONE.
+Validated: ACTIVE searched, SATURATED excluded, supporting/contrary leads preserved, null result preserved, duplicate link collapsed, ERL intake PASS, native/evaluation mutation false, TV/TVC credential authority, GitHub token authority NONE, authority effect NONE.
 
-## Remaining
-1. deterministic populated fixture and adapter execution proof;
-2. ERL candidate intake validation;
-3. registry promotion to CONFORMING.
-
-## Validation
-- `python scripts/search_agent.py --base . --dry-run`
-- `python <ERL>/scripts/validate_research_surface.py .`
-- `python <ERL>/scripts/validate_research_candidate_intake.py research/source_candidates.jsonl`
+## Integration
+- central ERL registry promotion is the remaining cross-repository integration write
+- ERL remains evaluation authority
 
 ## Completion accounting
-- developed-files: 9/9 = 100%
+- developed-files: 11/11 = 100%
 - scaffolding/stubs: 0
-- validation: 0/3
-- integration: 2/3
-- goal-activation: 75%
+- validation: 3/3
+- integration: 2/3 until central registry promotion
+- goal-activation: 95%
